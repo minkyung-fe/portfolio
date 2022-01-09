@@ -10,18 +10,10 @@ function Work() {
       <div className="tab-wrap">
         <div className="inner">
           <ul className="tab-wrap__head">
-            <li>
-              <a href="">전체</a>
-            </li>
-            <li>
-              <a href="">피씨</a>
-            </li>
-            <li>
-              <a href="">모바일</a>
-            </li>
-            <li>
-              <a href="">반응형</a>
-            </li>
+            <li>전체</li>
+            <li>피씨</li>
+            <li>모바일</li>
+            <li>반응형</li>
           </ul>
           <div className="tab-wrap__body">
             <div className="tab-wrap__cont">
