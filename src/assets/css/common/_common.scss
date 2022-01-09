@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------------
+  파일정의 : 공통 컴포넌트
+  속성순서 : 레이아웃 > 사이징 > 박스 > 글자 > 기타
+  분류순서 : @Globals, @Common
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+  @Globals
+------------------------------------------------------------------- */
+/* -------- Font -------- */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+
+html {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", sans-serif;
+
+  @include respond-to("mobileM-") {
+    font-size: 11px;
+  }
+  @include respond-to("mobileL-") {
+    font-size: 11.5px;
+  }
+  @include respond-to("tablet-") {
+    font-size: 12.5px;
+  }
+  @include respond-to("desktop-") {
+    font-size: 13px;
+  }
+}
+
+/* -------- Hide -------- */
+.only {
+  // ~ Mobile
+  &_mobile {
+    @include respond-to("desktop-") {
+      display: none !important;
+    }
+  }
+
+  // Desktop ~
+  &_desktop {
+    @include respond-to("-tablet") {
+      display: none !important;
+    }
+  }
+}
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* -------- System -------- */
+.is_scroll-none {
+  overflow: hidden !important;
+}
+
+/* -------- Style -------- */
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* -------------------------------------------------------------------
+  @Common
+------------------------------------------------------------------- */
+/* -------- Bg motion -------- */
+.bg-motion {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  div {
+    position: absolute;
+
+    &::before {
+      display: block;
+      transition: transform 0.5s ease;
+      content: "";
+    }
+  }
+  &__circle::before {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+
+    // Tablet ~
+    @include respond-to("tablet-") {
+      width: 14px;
+      height: 14px;
+    }
+
+    // Desktop ~
+    @include respond-to("desktop-") {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__triangle::before {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    background: none !important;
+
+    // Tablet ~
+    @include respond-to("tablet-") {
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 14px solid transparent;
+    }
+
+    // Desktop ~
+    @include respond-to("desktop-") {
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 16px solid transparent;
+    }
+  }
+  &__square::before {
+    width: 1rem;
+    height: 1rem;
+
+    // Tablet ~
+    @include respond-to("tablet-") {
+      width: 14px;
+      height: 14px;
+    }
+
+    // Desktop ~
+    @include respond-to("desktop-") {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__blue::before {
+    border-bottom-color: #89f6ff;
+    background-color: #89f6ff;
+  }
+  &__blue2::before {
+    border-bottom-color: #090d99;
+    background-color: #090d99;
+  }
+  &__orange::before {
+    border-bottom-color: #ff5e00;
+    background-color: #ff5e00;
+  }
+  &__yellow::before {
+    border-bottom-color: #feca00;
+    background-color: #feca00;
+  }
+  &__pink::before {
+    border-bottom-color: #ffcaca;
+    background-color: #ffcaca;
+  }
+  &__beige::before {
+    border-bottom-color: #fdf0e5;
+    background-color: #fdf0e5;
+  }
+  &__emoji {
+    width: 15px;
+
+    // Desktop ~
+    @include respond-to("desktop-") {
+      width: 30px;
+    }
+  }
+
+  // Event
+  @keyframes cursor {
+    0% {
+      background-color: #ff5e00;
+    }
+    49% {
+      background-color: #ff5e00;
+    }
+    50% {
+      background-color: transparent;
+    }
+    99% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: #ff5e00;
+    }
+  }
+}
+
+/* -------- ie -------- */
+.ie-txt {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    padding: 220px 30px 0;
+    background: url(#{$G-path}/ie_img.png) no-repeat 50% 0;
+    background-size: 200px auto;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+}

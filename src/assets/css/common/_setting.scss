@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------------
+  파일정의 : SCSS 세팅값
+  속성순서 : 레이아웃 > 사이징 > 박스 > 글자 > 기타
+  분류순서 : @Globals
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+    @Globals
+------------------------------------------------------------------- */
+/* 경로 */
+$G-path: "../../images";
+
+/* 분기점 */
+$G-breakpoints: (
+  // Mobile Medium 부터 ~
+  "mobileM-":
+    (
+      min-width: 375px,
+    ),
+  // Mobile Large 부터 ~
+  "mobileL-":
+    (
+      min-width: 414px,
+    ),
+  // ~ Mobile 까지
+  "-mobile":
+    (
+      max-width: 767px,
+    ),
+  // ~ Tablet 까지
+  "-tablet":
+    (
+      max-width: 1023px,
+    ),
+  // Tablet 부터 ~
+  "tablet-":
+    (
+      min-width: 768px,
+    ),
+  // Desktop Small 부터 ~
+  "desktop-":
+    (
+      min-width: 1024px,
+    ),
+  // Desktop Medium 부터 ~
+  "desktopM-":
+    (
+      min-width: 1200px,
+    ),
+  // Desktop Large 부터 ~,
+  "desktopL-":
+    (
+      min-width: 1440px,
+    )
+);
+@mixin respond-to($breakpoint) {
+  @if map-has-key($G-breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($G-breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.";
+  }
+}
