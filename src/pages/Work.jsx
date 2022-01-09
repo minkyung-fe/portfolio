@@ -26,9 +26,7 @@ function Work() {
           <div className="tab-wrap__body">
             <div className="tab-wrap__cont">
               <div className="tab-wrap__img-wrap">
-                <a href="">
-                  <img src="" alt="" />
-                </a>
+                <img src="" alt="" />
               </div>
               <div className="tab-wrap__txt-wrap">
                 <p className="tab-wrap__tit"></p>

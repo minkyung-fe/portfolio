@@ -90,9 +90,7 @@ function Main() {
                 <img src={require("../assets/images/main_work01.png")} alt="" />
               </figure>
               <div className="work-sec__hover">
-                <a href="">
-                  <p className="work-sec__txt"></p>
-                </a>
+                <p className="work-sec__txt"></p>
               </div>
             </div>
           </div>
