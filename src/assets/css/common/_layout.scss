@@ -13,7 +13,7 @@
 * {
   // Tablet ~
   @include respond-to("tablet-") {
-    cursor: none;
+    // cursor: none;
   }
 }
 .site-cursor {

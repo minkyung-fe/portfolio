@@ -21,6 +21,7 @@
 
 /* -------- Intro -------- */
 .main-intro {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -349,6 +350,8 @@
     @Contact
   ------------------------------------------------------------------- */
   .contact-sec {
+    background-color: #f6faff;
+
     a {
       display: block;
       padding: 2.5rem 0;
@@ -372,24 +375,24 @@
       color: #2128bd;
       animation: marquee 6s linear infinite;
     }
-  }
 
-  // Tablet ~
-  @include respond-to("tablet-") {
-    span {
-      padding-right: 4rem;
-      font-size: 72px;
+    // Tablet ~
+    @include respond-to("tablet-") {
+      span {
+        padding-right: 4rem;
+        font-size: 72px;
+      }
     }
-  }
 
-  // Desktop ~
-  @include respond-to("desktop-") {
-    a {
-      padding: 4rem 0;
-    }
-    span {
-      padding-right: 6rem;
-      font-size: 118px;
+    // Desktop ~
+    @include respond-to("desktop-") {
+      a {
+        padding: 4rem 0;
+      }
+      span {
+        padding-right: 6rem;
+        font-size: 118px;
+      }
     }
   }
 }
