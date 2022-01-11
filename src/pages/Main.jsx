@@ -83,7 +83,7 @@ function Main() {
             </div>
           </div>
         </section>
-        <section className="work-sec">
+        {/* <section className="work-sec">
           <div className="work-sec__item work-sec__item_01">
             <div className="work-sec__img-wrap">
               <figure className="work-sec__img">
@@ -131,7 +131,7 @@ function Main() {
               </div>
             </div>
           </Link>
-        </section>
+        </section> */}
         <section className="contact-sec">
           <Link to="/contact">
             <span>Contact me</span>

@@ -32,7 +32,7 @@ function Contact() {
             </p>
             <p>010-4341-0841</p>
             <p>minkyung.fe@gmail.com</p>
-            <address>서울시 동작구 사당동</address>
+            <address>서울특별시</address>
             <div class="contact-wrap__bunny"></div>
           </div>
         </div>
