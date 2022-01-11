@@ -1,0 +1,312 @@
+{
+  "portfolios": [
+    {
+      "id": 1,
+      "tabType": "t_pc",
+      "imgURL": "work_img01.png",
+      "tit": "모기지파트너스",
+      "modal": {
+        "info": "PC, MOBILE 웹사이트",
+        "desc": "모기지파트너스의 상담사들이 이용하는 홈페이지입니다. PC와 MOBILE을 따로 진행한 적응형홈페이지이며, PC 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 1월 ~ 2018년 2월",
+        "page": "PC : 55P, MOBILE : 39P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "http://www.mortgagepartners.co.kr/"
+      }
+    },
+    {
+      "id": 2,
+      "tabType": "t_pc t_mo",
+      "imgURL": "work_img02-1.png",
+      "tit": "신한알파리츠",
+      "modal": {
+        "info": "PC, MOBILE 웹사이트",
+        "desc": "신한금융그룹에 신한알파리츠 소개, 공시정보를 제공하는 사이트입니다. PC와 MOBILE을 따로 진행한 적응형홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 1월 ~ 2018년 2월",
+        "page": "PC : 20P, MOBILE : 20P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "http://www.shalphareit.com/html/main.html"
+      }
+    },
+    {
+      "id": 3,
+      "tabType": "t_responsive",
+      "imgURL": "work_img02-2.png",
+      "tit": "신한리츠운용",
+      "modal": {
+        "info": "반응형 웹사이트",
+        "desc": "신한금융그룹에 신한리츠운용을 소개하는 사이트입니다. 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 2월 ~ 2018년 3월",
+        "page": "1P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "http://www.shinhanrem.com/"
+      }
+    },
+    {
+      "id": 4,
+      "tabType": "t_pc",
+      "imgURL": "work_img03.png",
+      "tit": "shop&shop",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "shop&shop직원들이 이용할수있는 관리자 페이지입니다. PC만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 4월",
+        "page": "23P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": ""
+      }
+    },
+    {
+      "id": 5,
+      "tabType": "t_pc",
+      "imgURL": "work_img04.png",
+      "tit": "은우소프트",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "은우소프트 직원들이 사용하는 페이지입니다. PC만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 4월",
+        "page": "8P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": ""
+      }
+    },
+    {
+      "id": 6,
+      "tabType": "t_responsive",
+      "imgURL": "work_img05.png",
+      "tit": "에듀오피스",
+      "modal": {
+        "info": "반응형 웹사이트",
+        "desc": "에듀오피스를 소개하는 랜딩페이지입니다. 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 5월",
+        "page": "1P",
+        "skills": "html5, css3",
+        "link": "http://www.edu-office.com/edms/landing.do"
+      }
+    },
+    {
+      "id": 7,
+      "tabType": "t_pc",
+      "imgURL": "work_img06.png",
+      "tit": "한국전기연구원",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "한국전기연구원 직원들이 사용하는 페이지입니다. PC만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 5월",
+        "page": "14P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": ""
+      }
+    },
+    {
+      "id": 8,
+      "tabType": "t_pc t_mo",
+      "imgURL": "work_img07.png",
+      "tit": "DS푸드몰",
+      "modal": {
+        "info": "PC, MOBILE 웹사이트",
+        "desc": "DS푸드몰의 상품을 구입할수있는 쇼핑몰페이지 입니다. PC와 MOBILE을 따로 진행한 적응형홈페이지이며, MOBILE 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 5월 ~ 2018년 6월",
+        "page": "PC : 78P, MOBILE : 58P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "https://www.dsfoodmall.com/"
+      }
+    },
+    {
+      "id": 9,
+      "tabType": "t_pc",
+      "imgURL": "work_img08.png",
+      "tit": "e-stroe 36.5+",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "e-store 35.5+의 상품을 구입, 판매자가 관리할수있는 쇼핑몰 페이지입니다. PC만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 7월 ~ 2018년 8월",
+        "page": "246P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "https://www.sepp.or.kr/"
+      }
+    },
+    {
+      "id": 10,
+      "tabType": "t_responsive",
+      "imgURL": "work_img09-1.png",
+      "tit": "신세계 eCdocu 관리자",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "신세계eCdocu 직원들이 사용하는 페이지입니다. PC만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 10월",
+        "page": "8P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": ""
+      }
+    },
+    {
+      "id": 11,
+      "tabType": "t_responsive",
+      "imgURL": "work_img09-2.png",
+      "tit": "신세계 eCdocu",
+      "modal": {
+        "info": "반응형 웹사이트",
+        "desc": "신세계eCdocu를 소개하는 랜딩페이지입니다. 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2018년 11월 ~ 2018년 12월",
+        "page": "27P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "https://www.ecdocu.co.kr/main/mainDocu.do"
+      }
+    },
+    {
+      "id": 12,
+      "tabType": "t_responsive",
+      "imgURL": "work_img10.png",
+      "tit": "마이스소프트",
+      "modal": {
+        "info": "워드프레스기반 반응형 웹사이트",
+        "desc": "마이스소프트를 소개, 공지정보를 제공하는 홈페이지입니다. 워드프레스 기반 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 1월",
+        "page": "10P",
+        "skills": "wordpress",
+        "link": "http://www.micesoft.com/"
+      }
+    },
+    {
+      "id": 13,
+      "tabType": "t_responsive",
+      "imgURL": "work_img11.png",
+      "tit": "Jiet",
+      "modal": {
+        "info": "워드프레스기반 반응형 웹사이트",
+        "desc": "Jiet를 소개, 정보를 제공하는 홈페이지입니다. 워드프레스기반 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 2월",
+        "page": "6P",
+        "skills": "wordpress",
+        "link": "http://www.jiet.co.kr/"
+      }
+    },
+    {
+      "id": 14,
+      "tabType": "t_responsive",
+      "imgURL": "work_img12.png",
+      "tit": "Collabo X",
+      "modal": {
+        "info": "반응형 웹사이트",
+        "desc": "신세계INC의 화상협업 플랫폼입니다. 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 3월 ~ 2019년 4월",
+        "page": "13P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "https://collabox.work/"
+      }
+    },
+    {
+      "id": 15,
+      "tabType": "t_pc",
+      "imgURL": "work_img13.png",
+      "tit": "영사민원24 영문",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "영사민원24의 영문 페이지입니다. PC만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 6월",
+        "page": "9P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "https://consul.mofa.go.kr/en/main.do"
+      }
+    },
+    {
+      "id": 16,
+      "tabType": "t_pc",
+      "imgURL": "work_img14.png",
+      "tit": "e-Apostille",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "e-Apostille의 메인페이지를 리뉴얼 했습니다. PC만 진행한  홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 7월",
+        "page": "3P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "https://www.apostille.go.kr/gb/app/appIndex.do;jsessionid=f03RpyyV1pJYSHjM14Wgs67xhQLTV1CfbxtVQJFdxytp49SpPxZv!1539257442?language=ko"
+      }
+    },
+    {
+      "id": 17,
+      "tabType": "t_mo",
+      "imgURL": "work_img15.png",
+      "tit": "Cori",
+      "modal": {
+        "info": "하이브리드앱",
+        "desc": "Cori사이트의 쇼핑몰 페이지입니다. MOBILE만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 9월 ~ 2019년 10월",
+        "page": "91P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": "../project/cori/html/main.html"
+      }
+    },
+    {
+      "id": 18,
+      "tabType": "t_pc",
+      "imgURL": "work_img16.png",
+      "tit": "온라인여권신청체험",
+      "modal": {
+        "info": "PC 웹사이트",
+        "desc": "외교부의 여권신청체험 페이지입니다. PC만 진행한 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 11월",
+        "page": "8P",
+        "skills": "html5, css3, javascript, jquery",
+        "link": ""
+      }
+    },
+    {
+      "id": 19,
+      "tabType": "t_responsive",
+      "imgURL": "work_img17.png",
+      "tit": "salesOn",
+      "modal": {
+        "info": "부트스트랩기반 반응형 웹사이트",
+        "desc": "salesON 쇼핑몰 솔루션 페이지입니다. 부트스트랩기반 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2019년 12월 ~ 2020년 1월",
+        "page": "49P",
+        "skills": "bootstrap4",
+        "link": ""
+      }
+    },
+    {
+      "id": 20,
+      "tabType": "t_responsive",
+      "imgURL": "work_img18.png",
+      "tit": "druh",
+      "modal": {
+        "info": "부트스트랩기반 반응형 웹사이트",
+        "desc": "druh 쇼핑몰 페이지입니다. 부트스트랩기반 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2020년 3월 ~ 2020년 4월",
+        "page": "52P",
+        "skills": "bootstrap4",
+        "link": "https://www.druh.golf/"
+      }
+    },
+    {
+      "id": 21,
+      "tabType": "t_responsive",
+      "imgURL": "work_img20.png",
+      "tit": "DC2020",
+      "modal": {
+        "info": "반응형 웹사이트",
+        "desc": "spring + vue.js 환경으로 만들어진 vr컨텐츠 반응형 홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2020년 7월",
+        "page": "6P",
+        "skills": "html5, css3, javscript, jquery, vue.js",
+        "link": "https://www.lg-informationdisplay.com/dc2020"
+      }
+    },
+    {
+      "id": 22,
+      "tabType": "t_responsive",
+      "imgURL": "work_img21.png",
+      "tit": "ComeHome",
+      "modal": {
+        "info": "반응형 웹사이트",
+        "desc": "node.js express 환경으로 만들어진 반응형 이벤트홈페이지이며, 모든 퍼블리싱파트 작업을 진행하였습니다.",
+        "date": "2020년 8월",
+        "page": "1P",
+        "skills": "html5, css3, javscript, jquery, node.js",
+        "link": "https://lgcomehomechallenge.com/"
+      }
+    }
+  ]
+}
