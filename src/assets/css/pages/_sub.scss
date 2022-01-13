@@ -58,12 +58,9 @@
   .tab-wrap {
     margin-top: 2rem;
 
-    .inner {
-      padding: 0;
-    }
-
     &__head {
       display: flex;
+      margin: 0 -20px;
       border-top: 1px solid #f2f2f2;
       border-bottom: 1px solid #f2f2f2;
 
@@ -99,11 +96,10 @@
       }
     }
     &__body {
+      display: grid;
       margin-top: 20px;
-    }
-    &__cont {
-      width: 50%;
-      padding: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 12px;
     }
     &__img-wrap {
       a {
@@ -143,10 +139,8 @@
       }
       &__body {
         margin-top: 50px;
-      }
-      &__cont {
-        width: 33.333%;
-        padding: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 15px;
       }
       &__tit {
         font-size: 15px;

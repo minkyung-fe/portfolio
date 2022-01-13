@@ -142,7 +142,6 @@
       }
     }
     &__menu {
-      display: none;
       position: absolute;
       left: 0;
       top: 0;
@@ -171,6 +170,24 @@
           font-weight: 700;
           color: #00c6ff;
           text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // ~ Mobile
+  @include respond-to("-mobile") {
+    .gnb {
+      &__menu {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+        // Event
+        &:not(.is_show) {
+          pointer-events: none;
+        }
+        &.is_show {
+          opacity: 1;
         }
       }
     }

@@ -4,9 +4,11 @@ import Modal from "../components/Modal";
 
 function Work() {
   const [modal, setModal] = useState(false);
+  const [modalData, setModalData] = useState();
 
-  const showModal = () => {
+  const showModal = (portfolio) => {
     setModal(true);
+    setModalData(portfolio);
   };
 
   const onClose = () => {
@@ -36,7 +38,9 @@ function Work() {
                   <div
                     className="tab-wrap__cont"
                     key={portfolio.id}
-                    onClick={showModal}>
+                    onClick={() => {
+                      showModal(portfolio);
+                    }}>
                     <div className="tab-wrap__img-wrap">
                       <img
                         src={require("../assets/images/" + portfolio.imgURL)}
@@ -52,7 +56,7 @@ function Work() {
           </div>
         </div>
       </div>
-      <Modal show={modal} onClose={onClose} />
+      <Modal show={modal} data={modalData} onClose={onClose} />
     </>
   );
 }
