@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 function Header() {
+  const showMenu = () => {
+    const body = document.querySelector("body");
+    const btn = document.querySelector(".gnb__btn");
+    const menu = document.querySelector(".gnb__menu");
+
+    body.classList.toggle("is_scroll-none");
+    btn.classList.toggle("is_active");
+    menu.classList.toggle("is_show");
+  };
+
   return (
     <header className="header">
       <h1 className="header__logo">
@@ -12,7 +22,7 @@ function Header() {
         </Link>
       </h1>
       <nav className="gnb">
-        <button className="gnb__btn">
+        <button className="gnb__btn" onClick={showMenu}>
           <span></span>
           <span></span>
         </button>
