@@ -75,6 +75,7 @@
         text-align: center;
         transition: color 0.2s linear;
         text-align: center;
+        cursor: pointer;
 
         // Event
         &.is_active {
@@ -129,9 +130,6 @@
           line-height: 22px;
 
           // Event
-          &.is_active:hover {
-            color: #fff;
-          }
           &.is_active::after {
             width: 40%;
           }

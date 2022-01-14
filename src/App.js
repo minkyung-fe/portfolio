@@ -6,10 +6,12 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollTop></ScrollTop>
       <Header></Header>
       <main className="container">
         <Routes>

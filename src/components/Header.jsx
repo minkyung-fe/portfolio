@@ -1,38 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 function Header() {
-  const showMenu = () => {
+  const [menu, setMenu] = useState(false);
+
+  const showMenu = (active) => {
+    setMenu(active);
+
     const body = document.querySelector("body");
     const btn = document.querySelector(".gnb__btn");
     const menu = document.querySelector(".gnb__menu");
 
-    body.classList.toggle("is_scroll-none");
-    btn.classList.toggle("is_active");
-    menu.classList.toggle("is_show");
+    if (active) {
+      body.classList.add("is_scroll-none");
+      btn.classList.add("is_active");
+      menu.classList.add("is_show");
+    } else {
+      body.classList.remove("is_scroll-none");
+      btn.classList.remove("is_active");
+      menu.classList.remove("is_show");
+    }
   };
 
   return (
     <header className="header">
       <h1 className="header__logo">
-        <Link to="/">
+        <Link
+          onClick={() => {
+            showMenu(false);
+          }}
+          to="/">
           <img src={logo} alt="logo" />
           <span>HOME</span>
         </Link>
       </h1>
       <nav className="gnb">
-        <button className="gnb__btn" onClick={showMenu}>
+        <button
+          className="gnb__btn"
+          onClick={() => {
+            menu ? showMenu(false) : showMenu(true);
+          }}>
           <span></span>
           <span></span>
         </button>
         <div className="gnb__menu">
           <ul>
             <li>
-              <Link to="/work">Work</Link>
+              <Link
+                onClick={() => {
+                  showMenu(false);
+                }}
+                to="/work">
+                Work
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link
+                onClick={() => {
+                  showMenu(false);
+                }}
+                to="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

@@ -5,6 +5,7 @@ import Modal from "../components/Modal";
 function Work() {
   const [modal, setModal] = useState(false);
   const [modalData, setModalData] = useState();
+  const [tab, setTab] = useState("t");
 
   const showModal = (portfolio) => {
     setModal(true);
@@ -25,15 +26,40 @@ function Work() {
         <div className="tab-wrap">
           <div className="inner">
             <ul className="tab-wrap__head">
-              <li>전체</li>
-              <li>피씨</li>
-              <li>모바일</li>
-              <li>반응형</li>
+              <li
+                className={tab == "t" ? "is_active" : ""}
+                onClick={() => {
+                  setTab("t");
+                }}>
+                전체
+              </li>
+              <li
+                className={tab == "t_pc" ? "is_active" : ""}
+                onClick={() => {
+                  setTab("t_pc");
+                }}>
+                피씨
+              </li>
+              <li
+                className={tab == "t_mo" ? "is_active" : ""}
+                onClick={() => {
+                  setTab("t_mo");
+                }}>
+                모바일
+              </li>
+              <li
+                className={tab == "t_responsive" ? "is_active" : ""}
+                onClick={() => {
+                  setTab("t_responsive");
+                }}>
+                반응형
+              </li>
             </ul>
             <div className="tab-wrap__body">
               {data.portfolios
                 .slice(0)
                 .reverse()
+                .filter((portfolio) => portfolio.tabType.indexOf(tab) >= 0)
                 .map((portfolio) => (
                   <div
                     className="tab-wrap__cont"

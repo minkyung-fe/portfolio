@@ -114,7 +114,7 @@
       color: #0099ff;
 
       &::after {
-        position: absolute;
+        /* position: absolute;
         right: -6px;
         top: 50%;
         display: inline-block;
@@ -124,7 +124,7 @@
         animation: cursor 0.5s infinite;
         vertical-align: middle;
         transform: translateY(-50%);
-        content: "";
+        content: ""; */
       }
     }
     &__name {

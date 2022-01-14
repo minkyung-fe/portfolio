@@ -22,13 +22,10 @@ function Main() {
         <section className="introduce-sec">
           <div className="inner">
             <div className="introduce-sec__txt-wrap">
-              <p
-                class="introduce-sec__txt"
-                data-period="1500"
-                data-rotate='["FRONT-END DEVELOPER", "WEB PUBLISHER"]'></p>
+              <p class="introduce-sec__txt">FRONT-END DEVELOPER</p>
               <p class="introduce-sec__name">JEON MIN KYUNG.</p>
             </div>
-            <div class="bg-motion">
+            {/* <div class="bg-motion">
               <div
                 data-speed="1"
                 class="bg-motion__circle bg-motion__blue"></div>
@@ -80,7 +77,7 @@ function Main() {
                   alt=""
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
         {/* <section className="work-sec">
