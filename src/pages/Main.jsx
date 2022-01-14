@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BgMotion from "../components/BgMotion";
 
 function Main() {
   return (
@@ -7,11 +8,7 @@ function Main() {
       <div className="main-intro">
         <div className="main-intro__txt">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
-            <text
-              x="50%"
-              y="50%"
-              text-anchor="middle"
-              alignment-baseline="central">
+            <text x="50%" y="50%">
               JEON MIN KYUNG
             </text>
           </svg>
@@ -20,11 +17,21 @@ function Main() {
       <div className="pg__main">
         <h2 className="blind">본문</h2>
         <section className="introduce-sec">
+          <div className="bg-motion">
+            <BgMotion type="01" />
+            <BgMotion type="02" />
+            <BgMotion type="03" />
+            <BgMotion type="04" />
+            <BgMotion type="05" />
+            <BgMotion type="06" />
+            <BgMotion type="07" />
+          </div>
           <div className="inner">
             <div className="introduce-sec__txt-wrap">
-              <p class="introduce-sec__txt">FRONT-END DEVELOPER</p>
-              <p class="introduce-sec__name">JEON MIN KYUNG.</p>
+              <p className="introduce-sec__txt">FRONT-END DEVELOPER</p>
+              <p className="introduce-sec__name">JEON MIN KYUNG.</p>
             </div>
+
             {/* <div class="bg-motion">
               <div
                 data-speed="1"

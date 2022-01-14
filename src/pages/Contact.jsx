@@ -1,33 +1,18 @@
 import React from "react";
+import BgMotion from "../components/BgMotion";
 
 function Contact() {
   return (
     <div className="sub-content pg__contact">
       <h2 className="blind">본문</h2>
       <div className="bg-motion">
-        <div data-speed="1" className="bg-motion__circle bg-motion__blue"></div>
-        <div
-          data-speed="1.5"
-          className="bg-motion__triangle bg-motion__blue2"></div>
-        <div
-          data-speed="1"
-          className="bg-motion__square bg-motion__orange"></div>
-        <div
-          data-speed="1.5"
-          className="bg-motion__circle bg-motion__yellow"></div>
-        <div
-          data-speed="1"
-          className="bg-motion__triangle bg-motion__pink"></div>
-        <div
-          data-speed="1.5"
-          className="bg-motion__square bg-motion__beige"></div>
-        <div
-          data-speed="2"
-          className="bg-motion__circle bg-motion__orange"></div>
-        <div
-          data-speed="1.5"
-          className="bg-motion__triangle bg-motion__beige"></div>
-        <div data-speed="1" className="bg-motion__square bg-motion__blue"></div>
+        <BgMotion type="01" />
+        <BgMotion type="02" />
+        <BgMotion type="03" />
+        <BgMotion type="04" />
+        <BgMotion type="05" />
+        <BgMotion type="06" />
+        <BgMotion type="07" />
       </div>
       <div className="contact-wrap">
         <div className="inner">
