@@ -27,28 +27,28 @@ function Work() {
           <div className="inner">
             <ul className="tab-wrap__head">
               <li
-                className={tab == "t" ? "is_active" : ""}
+                className={tab === "t" ? "is_active" : ""}
                 onClick={() => {
                   setTab("t");
                 }}>
                 전체
               </li>
               <li
-                className={tab == "t_pc" ? "is_active" : ""}
+                className={tab === "t_pc" ? "is_active" : ""}
                 onClick={() => {
                   setTab("t_pc");
                 }}>
                 피씨
               </li>
               <li
-                className={tab == "t_mo" ? "is_active" : ""}
+                className={tab === "t_mo" ? "is_active" : ""}
                 onClick={() => {
                   setTab("t_mo");
                 }}>
                 모바일
               </li>
               <li
-                className={tab == "t_responsive" ? "is_active" : ""}
+                className={tab === "t_responsive" ? "is_active" : ""}
                 onClick={() => {
                   setTab("t_responsive");
                 }}>
