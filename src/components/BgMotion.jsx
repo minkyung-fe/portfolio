@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const BgMotion = (props) => {
   const randomNum = (min, max) => {
@@ -36,7 +36,9 @@ const BgMotion = (props) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(move, 10);
+    const interval = setInterval(() => {
+      move();
+    }, 10);
     return () => {
       clearInterval(interval);
     };
@@ -44,7 +46,10 @@ const BgMotion = (props) => {
 
   return (
     <div style={style} className="bg-motion__emoji">
-      <img src={require(`../assets/images/main_emoji${props.type}.png`)} />
+      <img
+        src={require(`../assets/images/main_emoji${props.type}.png`)}
+        alt=""
+      />
     </div>
   );
 };
