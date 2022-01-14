@@ -5,7 +5,7 @@ const BgMotion = (props) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
-  const windowHeight = window.innerHeight;
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const [pos, setPos] = useState({
     height: -randomNum(1, 300),
     left: randomNum(1, 95),
