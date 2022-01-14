@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const BgMotion = (props) => {
   const randomNum = (min, max) => {
@@ -17,27 +17,23 @@ const BgMotion = (props) => {
     transform: `translateY(${pos.height}px)`,
   };
 
-  const move = () => {
-    setPos((prev) => {
-      if (prev.height > windowHeight + 20) {
-        return {
-          height: -100,
-          left: randomNum(1, 95),
-          speed: randomNum(1, 2),
-        };
-      } else {
-        return {
-          height: prev.height + prev.speed,
-          left: prev.left,
-          speed: prev.speed,
-        };
-      }
-    });
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
-      move();
+      setPos((prev) => {
+        if (prev.height > windowHeight + 20) {
+          return {
+            height: -100,
+            left: randomNum(1, 95),
+            speed: randomNum(1, 2),
+          };
+        } else {
+          return {
+            height: prev.height + prev.speed,
+            left: prev.left,
+            speed: prev.speed,
+          };
+        }
+      });
     }, 10);
     return () => {
       clearInterval(interval);
